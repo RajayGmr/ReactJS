@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Basic</title>
+
+    <!-- React CDN link -->
+    <script 
+    crossorigin src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+<script 
+crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+></script>
+
+<!-- Babel link -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <h1>Hello world</h1>
+    <div id="main"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, quaerat, quibusdam, quasi, quidem, quod, quaerat, quibusdam, quasi.</p>   
+</body>
+
+<script type="text/babel">
+    const Main=()=>{
+        return <div>Hello World it is main tags</div>
+    }
+    let rootContainer = document.getElementById('main')
+
+    //create react element 
+    let e = React.createElement;
+
+    //create react root element 
+    let root = ReactDOM.createRoot(rootContainer);
+    //render the react root 
+    root.render(e((Main)));
+</script>
+</html>
