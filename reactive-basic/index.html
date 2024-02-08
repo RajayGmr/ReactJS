@@ -25,7 +25,21 @@ crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
 
 <script type="text/babel">
     const Main=()=>{
-        return <div>Hello World it is main tags</div>
+        let name= "Jack Smith"
+        let age= 26
+        let className= "my-class-name"
+        let clickHandler=()=>{
+          alert("What you want???");  
+        }
+        return (
+            <div className={className}>
+               <span> Hello World it is main tags</span>
+               <p>{name.toUpperCase()}</p>
+               <p>{age}</p>
+               <p>{new Date().toDateString()}</p>
+
+               <button onClick={clickHandler}>Click Me</button>
+            </div>)
     }
     let rootContainer = document.getElementById('main')
 
