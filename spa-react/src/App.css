@@ -1,15 +1,6 @@
 .app{
-  background-color: blueviolet;
+  background-color: rgb(95, 87, 103);
   color: white;
-  width: 500px;
-  height: 700px;
- position: absolute;
- padding: 7px 20px;
-  text-align: center;
-}
-li{
-  padding: 7px 20px;
-  text-align: center;
 }
 
 button {

@@ -46,7 +46,9 @@ let [count,setCount]= useState(0);
   }
 
   return (  
+    <>
     <div className='app'>
+     
         <h1>Hello {name}</h1>
         <p>Hello i am here</p>
         <button onClick={changeName}>Change Name</button>
@@ -66,13 +68,15 @@ let [count,setCount]= useState(0);
           {!posts.length && <p>No Posts Available</p>}
         </ul>
 
+        
+
         <h1>Counter</h1>
         <h3>Count = {count}</h3>
         <button onClick={increment}>Increment</button>
         <button onClick={decrement}>Decrement</button>
     </div>
-   
-   
+
+    </>
   );
 }
 
